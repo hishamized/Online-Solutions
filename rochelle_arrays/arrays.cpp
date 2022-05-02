@@ -4,7 +4,7 @@
 using namespace std;
 int main() {
    int choice;
-   cout<<"Menu\n [1] One dimensional array [6 inputs]\n [2] Two dimensional array [6 inputs]\n [3] Three dimensional array [6 inputs]\n";
+   cout<<"Menu\n [1] One dimensional array [6 inputs]\n [2] Two dimensional array [2x3 inputs]\n [3] Three dimensional array [3x3x3 inputs]\n";
    cout<<"Enter your choice\n";
    cin>>choice;
    switch(choice){
@@ -75,17 +75,17 @@ int main() {
                      switch(choice_2d){
                       case 1:
                         {
-                            int array_2d[6][6];
-                            for(int i=0; i<6; i++){
-                                for(int j=0; j<6; j++){
-                                    cout<<"Enter the score for Student With Roll No. "<<i<<endl;
+                            int array_2d[2][3];
+                            for(int i=0; i<2; i++){
+                                for(int j=0; j<3; j++){
+                                    cout<<"Enter the score"<<endl;
                                     cin>>array_2d[i][j];
                                 }
                             }
                             int sum = 0;
                             int average;
-                            for(int x=0; x<6; x++){
-                                for(int y=0; y<6; y++){
+                            for(int x=0; x<2; x++){
+                                for(int y=0; y<3; y++){
                                     sum = sum + array_2d[x][y];
                                 }
                             }
@@ -96,11 +96,11 @@ int main() {
                         }
                       case 2:
                         {
-                            int array_2d[6][6];
+                            int array_2d[2][3];
                             int search_value;
-                            for(int i=0; i<6; i++){
-                                for(int j=0; j<6; j++){
-                                    cout<<"Enter the score for Student With Roll No. "<<i<<endl;
+                            for(int i=0; i<2; i++){
+                                for(int j=0; j<3; j++){
+                                    cout<<"Enter the score."<<endl;
                                     cin>>array_2d[i][j];
                                 }
                             }
@@ -108,10 +108,10 @@ int main() {
                             cin>>search_value;
                             bool found;
                             found = false;
-                            for(int x=0; x<6; x++){
-                                for(int y=0; y<6; y++){
+                            for(int x=0; x<2; x++){
+                                for(int y=0; y<3; y++){
                                     if(array_2d[x][y] == search_value){
-                                        cout<<"\nElement found at row : "<<x<<" and Column "<<y<<endl;
+                                        cout<<"\nElement found at \nrow : "<<x<<" and \nColumn "<<y<<endl;
                                         found = true;
                                     }
                                 }
