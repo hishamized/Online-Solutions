@@ -1,0 +1,32 @@
+*{
+    margin: 0px;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    background-image: url(https://thumbs.dreamstime.com/b/homeless-animal-young-cat-sits-wooden-bench-park-square-composition-homeless-cat-sits-wooden-bench-park-173815197.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 50vw;
+    width: 50vw;
+    margin-left: auto;
+    margin-right: auto;
+ 
+   
+
+}
+.grid-item{
+    width: 100%;    
+    height: 100%;
+    border-radius: 50%;
+    background-color: aquamarine;
+}
+div:hover{
+   opacity: 0;
+}
+@media only screen and (max-width: 600px){
+    .grid-container{
+        height: 100vw;
+    width: 100vw;
+    }
+}
